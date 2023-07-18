@@ -1,0 +1,179 @@
+<style>
+  /* Contact start */
+
+  .contact {
+    background-color: white;
+    height: 725px;
+  }
+
+  .contact .tag {
+    text-align: center;
+    font-family: "Questrial", sans-serif;
+    font-size: 30px;
+    padding-top: 60px;
+  }
+
+  .contact .tag p {
+    text-align: center;
+  }
+
+  .main {
+    /* margin-left: 395px; */
+    margin-top: 65px;
+    width: 500px;
+    background-color: white;
+    box-shadow: 0 0 20px 0 #999;
+  }
+
+  .middle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form {
+    padding-left: 39px;
+    padding-top: 0px;
+  }
+
+  .input-item {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .input-item:focus {
+    border: 1px solid rgba(81, 203, 238, 1);
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  }
+
+  .textarea-field {
+    height: 150px;
+    padding-top: 10px;
+  }
+
+  label {
+    display: none;
+  }
+
+  #btn-1 {
+    /* border-radius: 20px; */
+    color: black;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: white;
+    font-size: 12px;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-left: 166px;
+    margin-bottom: 20px;
+    width: 95px;
+    transition: all 0.2s;
+  }
+
+  #btn-1:hover {
+    background-color: black;
+    color: white;
+  }
+
+  @media only screen and (max-width: 880px) and (min-width: 449px) {
+    .main {
+      margin: auto;
+      margin-top: 65px;
+      max-width: 472px;
+    }
+
+    .input-item {
+      max-width: 364px;
+    }
+
+    #btn-1 {
+      margin-left: 155px;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .main {
+      max-width: 310px;
+    }
+
+    .input-item {
+      max-width: 220px;
+    }
+
+    #btn-1 {
+      margin-left: 76px;
+    }
+  }
+  /* contact end */
+</style>
+
+<!-- Contact Start -->
+<div class="contact">
+  <div class="tag">
+    <p>Contact Us</p>
+  </div>
+  <div class="middle">
+    <div class="main">
+      <div class="form">
+        <form action="/Digitaludaan/index.php" method="post">
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your Name"
+            class="input-item"
+            required
+          />
+
+          <label for="address">Address:</label><br />
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="Enter your Address(Optional)"
+            class="input-item"
+          />
+
+          <label for="email">E-mail:</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your E-mail"
+            class="input-item"
+            required
+          />
+
+          <label for="contact">Contact no:</label><br />
+          <input
+            type="phone"
+            name="contact"
+            id="contact"
+            placeholder="Enter your Contact"
+            class="input-item"
+            required
+          />
+
+          <textarea
+            class="input-item textarea-field"
+            name="message"
+            placeholder="Enter your Message"
+            required
+          ></textarea>
+          <br />
+
+          <button type="submit" id="btn-1">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact end -->
